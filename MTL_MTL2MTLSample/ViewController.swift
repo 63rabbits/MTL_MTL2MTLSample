@@ -72,7 +72,7 @@ class ViewController: UIViewController, MTKViewDelegate {
                                         height: texture.height,
                                         mipmapped: false)
         midTextureDescriptor.usage = [ .renderTarget, .shaderRead ]
-
+        midTexture = device.makeTexture(descriptor: midTextureDescriptor)
     }
     
     private func makeBuffers() {
