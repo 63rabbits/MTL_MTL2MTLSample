@@ -72,6 +72,7 @@ class ViewController: UIViewController, MTKViewDelegate {
                                         height: texture.height,
                                         mipmapped: false)
         midTextureDescriptor.usage = [ .renderTarget, .shaderRead ]
+        midTextureDescriptor.storageMode = .private
         midTexture = device.makeTexture(descriptor: midTextureDescriptor)
     }
     
