@@ -24,6 +24,8 @@
 		3316CBDF2A77B7E200D6CCE2 /* MTL_MTL2MTLSample-0001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MTL_MTL2MTLSample-0001.png"; sourceTree = "<group>"; };
 		336DC0DB2A5EEFB000EAE9AE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		336DC0DF2A5EF32A00EAE9AE /* Kernel.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Kernel.metal; sourceTree = "<group>"; };
+		3371510B2A82426E0018BB89 /* Metal-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Metal-Bridging-Header.h"; sourceTree = "<group>"; };
+		3371510C2A8244A80018BB89 /* MetalShader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalShader.h; sourceTree = "<group>"; };
 		3392F1922A790FE40045EFB2 /* MTL_MTL2MTLSample-0000.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MTL_MTL2MTLSample-0000.png"; sourceTree = "<group>"; };
 		33BE50352A795AC5007E624C /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		33E9B5E52A5EB3BE00FDAA2E /* MTL_MTL2MTLSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MTL_MTL2MTLSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -73,6 +75,8 @@
 				33E9B5E82A5EB3BE00FDAA2E /* AppDelegate.swift */,
 				33E9B5EA2A5EB3BE00FDAA2E /* SceneDelegate.swift */,
 				33E9B5EC2A5EB3BE00FDAA2E /* ViewController.swift */,
+				3371510B2A82426E0018BB89 /* Metal-Bridging-Header.h */,
+				3371510C2A8244A80018BB89 /* MetalShader.h */,
 				336DC0DF2A5EF32A00EAE9AE /* Kernel.metal */,
 				33E9B5EE2A5EB3BE00FDAA2E /* Main.storyboard */,
 				33E9B5F12A5EB3E600FDAA2E /* Assets.xcassets */,
@@ -324,6 +328,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.63rabbits.MTL-MTL2MTLSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Metal-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -351,6 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.63rabbits.MTL-MTL2MTLSample";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)/Metal-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
